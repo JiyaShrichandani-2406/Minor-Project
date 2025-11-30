@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPortal - Student Dashboard</title> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+    <link rel="stylesheet" href="style1.css"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EduPortal</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="auth-links">
+                <a href="#" class="sign-in">Sign In</a>
+                <a href="#" class="get-started-btn">Get Started</a>
+            </div>
+            <div class="mobile-icons">
+                <a href="#" class="icon-btn-accent"><i class="fas fa-lock"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="dashboard-main">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-sm">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>EduPortal</span>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-th-large"></i> Dashboard
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-lightbulb"></i> My Ideas
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-upload"></i> Submit Idea
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-chart-line"></i> Progress
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-check-square"></i> Evaluations
+                </a>
+            </nav>
+            <div class="user-info">
+                <i class="fas fa-user-circle"></i>
+                <div class="user-details">
+                    <div class="username">Tijhs</div>
+                    <div class="role">Student</div>
+                </div>
+            </div>
+        </aside>
+
+        <section class="dashboard-content">
+            <div class="content-header">
+                <h2 class="title">Student Dashboard</h2>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-icons">
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-user-circle profile-icon"></i>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card total-ideas">
+                    <div class="stat-label">Total Ideas</div>
+                    <div class="stat-number">12</div>
+                    <i class="fas fa-lightbulb stat-icon"></i>
+                </div>
+                <div class="stat-card in-progress">
+                    <div class="stat-label">In Progress</div>
+                    <div class="stat-number">5</div>
+                    <i class="fas fa-tasks stat-icon"></i>
+                </div>
+                <div class="stat-card completed">
+                    <div class="stat-label">Completed</div>
+                    <div class="stat-number">7</div>
+                    <i class="fas fa-check-circle stat-icon"></i>
+                </div>
+                <div class="stat-card avg-score">
+                    <div class="stat-label">Avg. Score</div>
+                    <div class="stat-number">8.5</div>
+                    <i class="fas fa-star stat-icon"></i>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <h3 class="section-title">Quick Actions</h3>
+                <button class="btn quick-btn primary-btn"><i class="fas fa-plus"></i> Submit New Idea</button>
+                <button class="btn quick-btn secondary-btn"><i class="fas fa-upload"></i> Upload Progress</button>
+                <button class="btn quick-btn secondary-btn"><i class="fas fa-eye"></i> View Evaluations</button>
+            </div>
+
+            <div class="recent-ideas">
+                <div class="section-header">
+                    <h3 class="section-title">Recent Ideas</h3>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                
+                <div class="idea-card">
+                    <div class="idea-title">AI-Powered Study Assistant</div>
+                    <div class="idea-meta">Teacher: **Sarah Johnson**</div>
+                    <div class="idea-progress">
+                        <div class="progress-label">Progress:</div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 65%;"></div>
+                        </div>
+                        <span class="progress-percent">65%</span>
+                    </div>
+                    <div class="idea-meta submitted">Submitted: 2024-01-15</div>
+                    <div class="idea-status status-in-progress">In Progress</div>
+                </div>
+
+                <div class="idea-card">
+                    <div class="idea-title">Sustainable Campus Initiative</div>
+                    <div class="idea-meta">Teacher: **Prof. Michael Chen**</div>
+                    <div class="idea-progress">
+                        <div class="progress-label">Progress:</div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar green" style="width: 100%;"></div>
+                        </div>
+                        <span class="progress-percent">100%</span>
+                    </div>
+                    <div class="idea-meta submitted">Submitted: 2024-01-10</div>
+                    <div class="idea-status status-review">Under Review</div>
+                </div>
+
+                <div class="idea-card">
+                    <div class="idea-title">Virtual Lab Simulation Platform</div>
+                    <div class="idea-meta">Teacher: **Dr. Emily Rodriguez**</div>
+                    <div class="idea-progress">
+                        <div class="progress-label">Progress:</div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar green" style="width: 100%;"></div>
+                        </div>
+                        <span class="progress-percent">100%</span>
+                    </div>
+                    <div class="idea-meta submitted">Submitted: 2023-12-20</div>
+                    <div class="idea-status status-completed">Completed</div>
+                    <div class="idea-score"><i class="fas fa-star"></i> 9.2</div>
+                </div>
+            </div>
+
+            <div class="upcoming-deadlines">
+                <h3 class="section-title">Upcoming Deadlines</h3>
+                <div class="deadline-item">
+                    <div class="deadline-title">Progress Report - AI Study Assistant</div>
+                    <div class="deadline-date">2024-02-01</div>
+                    <div class="deadline-days danger">5 days left</div>
+                </div>
+                <div class="deadline-item">
+                    <div class="deadline-title">Final Presentation - Campus Initiative</div>
+                    <div class="deadline-date">2024-02-18</div>
+                    <div class="deadline-days warning">14 days left</div>
+                </div>
+                <div class="deadline-item">
+                    <div class="deadline-title">Peer Review Submission</div>
+                    <div class="deadline-date">2024-02-15</div>
+                    <div class="deadline-days info">19 days left</div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">EduPortal</div>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Support</a>
+                <a href="#">Powered by Readdy</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 EduPortal. Transforming education through innovation.
+        </div>
+    </footer>
+
+    <div id="accountModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-hero-icon"><i class="fas fa-plus"></i></div>
+            <h2>Create Account</h2>
+            <p>Start your learning journey today</p>
+            <form id="createAccountForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="fullName" name="fullName" placeholder="John Doe">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="chooseRole">Choose Your Role</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user-tag"></i>
+                        <select id="chooseRole" name="role">
+                            <option value="student">Student - Learn, collaborate, and track progress</option>
+                            <option value="teacher">Teacher - Empower students with intelligent tools</option>
+                            <option value="admin">Admin - Orchestrate the entire ecosystem</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password" placeholder="Minimum 6 characters">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="re-enter your password">
+                    </div>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I agree to the Terms of Service and Privacy Policy</label>
+                </div>
+                <button type="submit" class="btn primary-btn create-account-btn">Create Account <i class="fas fa-arrow-right"></i></button>
+                <p class="login-link">Already have an account? <a href="#">Sign in here</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
